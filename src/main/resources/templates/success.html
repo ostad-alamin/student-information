@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved Successfully</title>
+</head>
+<body>
+    <h1>Student Saved</h1>
+    <label>Student Id:
+        <span th:text="${s.getId()}"></span></label><br>
+    <label>Student Name:
+        <span th:text="${s.getName()}"></span></label><br>
+    <label>Student Program:
+        <span th:text="${s.getProgram()}"></span></label><br>
+    <label>Student Batch:
+        <span th:text="${s.getBatch()}"></span></label><br>
+    <label>Student CGPA:
+        <span th:text="${s.getCgpa()}"></span></label>
+</body>
+</html>
