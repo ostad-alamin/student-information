@@ -1,27 +1,10 @@
-package bd.edu.seu.studentinformation.model;
+package bd.edu.seu.studentinformation.dto;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "student_table")
-public class Student {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-
+public class StudentDto {
     private String name;
     private String program;
     private int batch;
     private double cgpa;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
